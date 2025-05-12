@@ -1,0 +1,21 @@
+Je begint met een use case diagram, welke ingewikkelde functies moeten in stappen uitgebeeld worden.
+Je toont de stappen van een apparaat of onderdelen van een apparaat.
+
+Elke stap heeft weer kleinere stappen, de stap afrekenen kan bijvoorbeeld bestaan uit:
+Je hebt een pre conditie voordat er afgerekend kan worden
+
+1 Apparaat toont de tekst ''Voer uw pinpas in''
+2 Vraagt om pincode van de klant
+3 checked of de pincode klopt
+4 checked of er genoeg saldo is
+5 haalt geld af van de pinpas
+6 toont betaling succesvol
+
+Post conditie situatie nadat er afgerekend is
+
+Er kunnen uitzonderingen zijn!
+Zoals dat iemand te weinig saldo heeft, daarvoor moet je ook stappen aangeven
+Of wanneer iemand heel lang niet meer interactie heeft met de afreken manier, dan kan het apparaat dit cancellen
+
+Include en extend zijn van toepassing van een case diagram.
+

@@ -1,0 +1,115 @@
+\doxysection{BME280.\+hpp}
+\hypertarget{_b_m_e280_8hpp_source}{}\label{_b_m_e280_8hpp_source}\index{C:/Users/Aimane/Desktop/HU/JAAR\_1\_TI-\/S2/personal-\/progress-\/Aimane0/Arduino/LIBRARY/BME280\_library\_CPP/BME280\_LIBRARY/lib/BME280HPPnCPP/BME280.hpp@{C:/Users/Aimane/Desktop/HU/JAAR\_1\_TI-\/S2/personal-\/progress-\/Aimane0/Arduino/LIBRARY/BME280\_library\_CPP/BME280\_LIBRARY/lib/BME280HPPnCPP/BME280.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ LIBRARY\ FOR\ THE\ BME280}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ DIGITAL\ HUMIDITY,\ PRESSURE\ AND\ TEMPERATURE\ SENSOR}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ WRITEN\ BY\ AIMANE\ CHAKIRI}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ LIBRARY\ BASED\ ON\ BOSCH\ BME280\ DATASHEET}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ LINK\ TO\ THE\ DATASHEET:\ https://www.mouser.com/datasheet/2/783/BST-\/BME280-\/DS002-\/1509607.pdf}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ BME280\_HPP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ BME280\_HPP}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <Arduino.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <Wire.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_b_m_e280}{BME280}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ \mbox{\hyperlink{class_b_m_e280_a1be3aa7fa5ff35c939feaffc1807943a}{\_sensor\_address}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_b_m_e280_1_1_data_bits}{DataBits}}}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ uint8\_t\ hum\_lsb;\ \ \ \ \textcolor{comment}{//\ 0xFE}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ uint8\_t\ hum\_msb;\ \ \ \ \textcolor{comment}{//\ 0xFD}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ uint8\_t\ temp\_xlsb;\ \ \textcolor{comment}{//\ 0xFC}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ uint8\_t\ temp\_lsb;\ \ \ \textcolor{comment}{//\ 0xFB}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ uint8\_t\ temp\_msb;\ \ \ \textcolor{comment}{//\ 0xFA}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ uint8\_t\ press\_xlsb;\ \textcolor{comment}{//\ 0xF9}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ uint8\_t\ press\_lsb;\ \ \textcolor{comment}{//\ 0xF8}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ uint8\_t\ press\_msb;\ \ \textcolor{comment}{//\ 0xF7}}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_b_m_e280_1_1_data_bits}{DataBits}}\ dataBits;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_b_m_e280_1_1_adc}{Adc}}}
+\DoxyCodeLine{00038\ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ RAW\ DATA\ VARIABLES}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ int32\_t\ adc\_T;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ int32\_t\ adc\_P;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ int32\_t\ adc\_H;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ int32\_t\ t\_fine;}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{struct_b_m_e280_1_1_adc}{Adc}}\ adc;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_b_m_e280_1_1_calibration_data}{CalibrationData}}}
+\DoxyCodeLine{00050\ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CALIBRATION\ VARIABLES\ FOR\ TEMPERATURE}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ uint16\_t\ dig\_T1;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ int16\_t\ dig\_T2;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ int16\_t\ dig\_T3;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CALIBRATION\ VARIABLES\ FOR\ PRESSURE}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ uint16\_t\ dig\_P1;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P2;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P3;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P4;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P5;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P6;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P7;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P8;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ int16\_t\ dig\_P9;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CALIBRATION\ FOR\ HUMIDITY}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ uint8\_t\ dig\_H1;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ int16\_t\ dig\_H2;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ uint8\_t\ dig\_H3;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ int16\_t\ dig\_H4;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ int16\_t\ dig\_H5;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ int8\_t\ dig\_H6;}
+\DoxyCodeLine{00074\ \ \ \ \ \};}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{struct_b_m_e280_1_1_calibration_data}{CalibrationData}}\ calibrationData;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_b_m_e280_1_1_registers}{Registers}}}
+\DoxyCodeLine{00079\ \ \ \ \ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_CHIPID\ =\ 0xD0;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ REGISTER\ ADDRESS\ FOR\ CHIP\ ID}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_CALIBRATIONREG1\ =\ 0x88;\ \ \ \textcolor{comment}{//\ REGISTER\ FOR\ BURST\ READING\ dig\_T1\ TILL\ dig\_P9}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_CALIBRATIONREG2\ =\ 0xA1;\ \ \ \textcolor{comment}{//\ REGISTER\ FOR\ dig\_H1}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_CALIBRATIONREG3\ =\ 0xE1;\ \ \ \textcolor{comment}{//\ REGISTER\ FOR\ BURST\ READING\ dig\_H2\ TILL\ dig\_H6}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_MEASUREMENTREG\ =\ 0xF7;\ \ \ \ \textcolor{comment}{//\ REGISTER\ FOR\ BURST\ READING\ TEMPERATURE\ TILL\ PRESSURE\ REGISTERS\ OR\ TEMP\ TILL\ HUMIDITY\ REGISTERS}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_HUMIDITYSAMPLING\ =\ 0xF2;\ \ \textcolor{comment}{//\ REGISTER\ FOR\ SETTING\ HUMIDITY\ OVERSAMPLING}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_PRESnTEMPSAMPLING\ =\ 0xF4;\ \textcolor{comment}{//\ REGISTER\ FOR\ SETTING\ PRESSURE\ AND\ TEMPERATURE}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BME280\_CONTROLREGISTER\ =\ 0xF5;\ \ \ \textcolor{comment}{//\ REGISTER\ FOR\ SPI,\ STANDBY\ AND\ FILTER\ COEFFICIENT}}
+\DoxyCodeLine{00088\ \ \ \ \ \};}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{struct_b_m_e280_1_1_registers}{Registers}}\ registers;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_a0034b38cb760b5c8f48bd2f4348de9ee}{getCalibratedTemperature}}(int32\_t\ adc\_T);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_aa8a5af257f63037a1e24bbb03239ccb2}{getCalibratedPressure}}(int32\_t\ adc\_P);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_ab12ee62a8b7dd5300dd10696192d3beb}{getCalibratedHumidity}}(int32\_t\ adc\_H);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{class_b_m_e280_adb75c41898762b698fea6d175dee51a6}{BME280}}(uint8\_t\ sensor\_address);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_m_e280_ad94cc5be5dfef7c1b71e82a781ec5a8b}{begin}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_m_e280_a34cf1585bf0ab0ab7107fdf8b017d481}{readCalibrationData}}();}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_m_e280_af238e0859ea38c0435a9f583939dc4ad}{getAll}}();}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00122\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_b_m_e280_a8bd6be9515c948ec1e17f2ecb27b1837}{getChipID}}();}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_b_m_e280_a0620bff6ac8ffc6636b09cd1e68e7483}{setSettings}}();}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_a6138208603627bbfc3e5c07e07c96c6e}{getTemperature}}();}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_a237f77b4d86de70244508956ac8daf60}{getPressure}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_b_m_e280_a9b873efb610056bf51d3bf1317848859}{getHumidity}}();}
+\DoxyCodeLine{00138\ \};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

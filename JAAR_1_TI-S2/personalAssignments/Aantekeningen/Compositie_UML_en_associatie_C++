@@ -1,0 +1,29 @@
+Als je code schrijft is het handig om diagrammen te maken!
+Schrijf voor je eigen een klasse diagram om te oefenen.
+
+
+Meeste organisaties werken met klasse diagrammen.
+
+
+Klasse in andere klasse worden een compositie genoemd.
+
+
+ingekleurde wiebertje/ruitje en lijn is in UML de notatie van een compositie relatie!
+De ingekleurde ruitjes geven aan aan welke klasse ze toe behoren.
+
+
+in het voorbeeld: https://github.com/HU-TI-DEV/TI-S2/blob/main/software/c%2B%2B/oop-concepten/klassen/compositie.md kun je wiebertjes zien
+Als je verder naar beneden scrollt kun je zien hoe UML er uit ziet
+wanneer een klasse een andere klasse gebruikt
+left right top en bottom zijn onderdeel van rectangle, want daar staan de ingekleurde ruitjes!
+
+
+Een + is een public attribute, - is private
+
+
+Je moet een compositie relatie kunnen tekenen met UML
+
+
+JE HEBT OOK IETS ANDERS DAN COMPOSITIE!
+Associatie! https://github.com/HU-TI-DEV/TI-S2/blob/main/software/c%2B%2B/oop-concepten/klassen/associatie.md
+Met open wiebertjes! Open ruitjes!

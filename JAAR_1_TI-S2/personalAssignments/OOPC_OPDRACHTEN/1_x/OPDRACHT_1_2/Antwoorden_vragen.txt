@@ -1,0 +1,22 @@
+Onderstaand zie je de code van de class book. De code is verdeeld over een .hpp bestand en een .cpp bestand.
+
+Lees de code en beantwoord de volgende vragen:
+
+    1 Wat doet de constructor van de klasse book?
+    - Volgens wat ik heb gelezen online is dit om de klasse te initialiseren, alleen snap ik niet wat daarmee wordt bedoeld.
+      
+      Maakt de onderdelen van je klasse aan als je de klasse aanroept om een object te maken van je klasse
+
+    2 Hoe noemen we de tekst tussen de: (dubbelepunt) en de { (krulhaak) bij de constructor?
+    - ????
+
+    3 Welke functies van de klasse book zijn van buitenaf toegankelijk?
+    - void print()
+    - constructor book()
+
+    4 Waarom denk je dat de schrijver van deze code ervoor heeft gekozen sommige functies private te maken?
+    - Je wilt dat iemand deze functies niet gebruikt
+
+    5 Waarom staat er in de .cpp voor elke functie “book::”?
+    - Dit geeft aan dat de functies toe behoren aan de klasse book!
+    

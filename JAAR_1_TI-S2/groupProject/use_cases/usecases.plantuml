@@ -1,0 +1,23 @@
+@startuml use casses kas
+left to right direction
+actor arduino
+rectangle kas{
+    usecase "Temperatuur reguleren" as temp
+    usecase "Luchtvochtigheid reguleren" as humid
+    usecase "Plant aardvochtigheid reguleren" as soil
+    usecase "Licht regelen (UV)" as uv
+    soil <.. (water geven): extend
+    uv <.. (lamp aan/uitzetten): extend
+    humid <.. (raam openen/sluiten): extend
+    temp <.. (raam openen/sluiten): extend
+    humid <.. (ventilator aan/uit): extend
+    temp <.. (ventilator aan/uit): extend
+}
+
+arduino -- temp
+arduino -- humid
+arduino -- soil
+arduino -- uv
+
+
+@enduml

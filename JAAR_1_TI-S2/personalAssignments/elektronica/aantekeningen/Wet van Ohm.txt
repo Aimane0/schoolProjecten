@@ -1,0 +1,8 @@
+R = U / I
+I = U / R 
+U = I * R
+
+R = WEERSTAND, OHM
+I = STROOM, AMPERE
+U = SPANNING, VOLT
+

@@ -1,0 +1,205 @@
+\doxysection{BME280 Class Reference}
+\hypertarget{class_b_m_e280}{}\label{class_b_m_e280}\index{BME280@{BME280}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_m_e280_1_1_adc}{Adc}}
+\begin{DoxyCompactList}\small\item\em Struct that contains the adc values in bytes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_b_m_e280_1_1_calibration_data}{Calibration\+Data}}
+\begin{DoxyCompactList}\small\item\em Struct that contains calibration bytes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_b_m_e280_1_1_data_bits}{Data\+Bits}}
+\begin{DoxyCompactList}\small\item\em Struct that contains lsb and msb for raw data bytes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_b_m_e280_1_1_registers}{Registers}}
+\begin{DoxyCompactList}\small\item\em Struct that contains register addresses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_m_e280_adb75c41898762b698fea6d175dee51a6}{BME280}} (uint8\+\_\+t sensor\+\_\+address)
+\begin{DoxyCompactList}\small\item\em constructor of the class \end{DoxyCompactList}\item 
+\Hypertarget{class_b_m_e280_ad94cc5be5dfef7c1b71e82a781ec5a8b}\label{class_b_m_e280_ad94cc5be5dfef7c1b71e82a781ec5a8b} 
+void {\bfseries begin} ()
+\begin{DoxyCompactList}\small\item\em starts the wire.\+h communication \end{DoxyCompactList}\item 
+\Hypertarget{class_b_m_e280_a34cf1585bf0ab0ab7107fdf8b017d481}\label{class_b_m_e280_a34cf1585bf0ab0ab7107fdf8b017d481} 
+void {\bfseries read\+Calibration\+Data} ()
+\begin{DoxyCompactList}\small\item\em gets the calibration data necessary to calibrate measurements \end{DoxyCompactList}\item 
+\Hypertarget{class_b_m_e280_af238e0859ea38c0435a9f583939dc4ad}\label{class_b_m_e280_af238e0859ea38c0435a9f583939dc4ad} 
+void {\bfseries get\+All} ()
+\begin{DoxyCompactList}\small\item\em gets the adc values \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_b_m_e280_a8bd6be9515c948ec1e17f2ecb27b1837}{get\+Chip\+ID}} ()
+\begin{DoxyCompactList}\small\item\em gets the chip ID \end{DoxyCompactList}\item 
+\Hypertarget{class_b_m_e280_a0620bff6ac8ffc6636b09cd1e68e7483}\label{class_b_m_e280_a0620bff6ac8ffc6636b09cd1e68e7483} 
+void {\bfseries set\+Settings} ()
+\begin{DoxyCompactList}\small\item\em sets chip configurations to indoor navigation \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_b_m_e280_a6138208603627bbfc3e5c07e07c96c6e}{get\+Temperature}} ()
+\begin{DoxyCompactList}\small\item\em gets the measured temperature ~\newline
+ \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_b_m_e280_a237f77b4d86de70244508956ac8daf60}{get\+Pressure}} ()
+\begin{DoxyCompactList}\small\item\em gets the measured pressure ~\newline
+ \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_b_m_e280_a9b873efb610056bf51d3bf1317848859}{get\+Humidity}} ()
+\begin{DoxyCompactList}\small\item\em gets the measured pressure ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_b_m_e280_a0034b38cb760b5c8f48bd2f4348de9ee}{get\+Calibrated\+Temperature}} (int32\+\_\+t adc\+\_\+T)
+\begin{DoxyCompactList}\small\item\em Function to calibrate the recieved and fitting adc values. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_b_m_e280_aa8a5af257f63037a1e24bbb03239ccb2}{get\+Calibrated\+Pressure}} (int32\+\_\+t adc\+\_\+P)
+\begin{DoxyCompactList}\small\item\em Function to calibrate the recieved and fitting adc values. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_b_m_e280_ab12ee62a8b7dd5300dd10696192d3beb}{get\+Calibrated\+Humidity}} (int32\+\_\+t adc\+\_\+H)
+\begin{DoxyCompactList}\small\item\em Function to calibrate the recieved and fitting adc values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_b_m_e280_a1be3aa7fa5ff35c939feaffc1807943a}\label{class_b_m_e280_a1be3aa7fa5ff35c939feaffc1807943a} 
+const uint8\+\_\+t {\bfseries \+\_\+sensor\+\_\+address}
+\begin{DoxyCompactList}\small\item\em Struct that contains the I2C address. \end{DoxyCompactList}\item 
+\Hypertarget{class_b_m_e280_aabc6923aa4055b29a1917127873f32a6}\label{class_b_m_e280_aabc6923aa4055b29a1917127873f32a6} 
+\mbox{\hyperlink{struct_b_m_e280_1_1_data_bits}{Data\+Bits}} {\bfseries data\+Bits}
+\item 
+\Hypertarget{class_b_m_e280_a9feea5b31eda741590cac2322e75cce6}\label{class_b_m_e280_a9feea5b31eda741590cac2322e75cce6} 
+\mbox{\hyperlink{struct_b_m_e280_1_1_adc}{Adc}} {\bfseries adc}
+\item 
+\Hypertarget{class_b_m_e280_a28db0606b910e412507ca042b6e34fd6}\label{class_b_m_e280_a28db0606b910e412507ca042b6e34fd6} 
+\mbox{\hyperlink{struct_b_m_e280_1_1_calibration_data}{Calibration\+Data}} {\bfseries calibration\+Data}
+\item 
+\Hypertarget{class_b_m_e280_a95adcb95b4200484835c020ee64aef3e}\label{class_b_m_e280_a95adcb95b4200484835c020ee64aef3e} 
+\mbox{\hyperlink{struct_b_m_e280_1_1_registers}{Registers}} {\bfseries registers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_b_m_e280_adb75c41898762b698fea6d175dee51a6}\index{BME280@{BME280}!BME280@{BME280}}
+\index{BME280@{BME280}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{BME280()}{BME280()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_adb75c41898762b698fea6d175dee51a6} 
+BME280\+::\+BME280 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sensor\+\_\+address}{}\end{DoxyParamCaption})}
+
+
+
+constructor of the class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+\_\+address} & I2C address \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_b_m_e280_ab12ee62a8b7dd5300dd10696192d3beb}\index{BME280@{BME280}!getCalibratedHumidity@{getCalibratedHumidity}}
+\index{getCalibratedHumidity@{getCalibratedHumidity}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getCalibratedHumidity()}{getCalibratedHumidity()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_ab12ee62a8b7dd5300dd10696192d3beb} 
+float BME280\+::get\+Calibrated\+Humidity (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{adc\+\_\+H}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to calibrate the recieved and fitting adc values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+\_\+T} & raw humidity data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calibrated humidity 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_aa8a5af257f63037a1e24bbb03239ccb2}\index{BME280@{BME280}!getCalibratedPressure@{getCalibratedPressure}}
+\index{getCalibratedPressure@{getCalibratedPressure}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getCalibratedPressure()}{getCalibratedPressure()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_aa8a5af257f63037a1e24bbb03239ccb2} 
+float BME280\+::get\+Calibrated\+Pressure (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{adc\+\_\+P}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to calibrate the recieved and fitting adc values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+\_\+T} & raw pressure data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calibrated pressure 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_a0034b38cb760b5c8f48bd2f4348de9ee}\index{BME280@{BME280}!getCalibratedTemperature@{getCalibratedTemperature}}
+\index{getCalibratedTemperature@{getCalibratedTemperature}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getCalibratedTemperature()}{getCalibratedTemperature()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_a0034b38cb760b5c8f48bd2f4348de9ee} 
+float BME280\+::get\+Calibrated\+Temperature (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{adc\+\_\+T}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function to calibrate the recieved and fitting adc values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+\_\+T} & raw temperature data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calibrated temperature 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_a8bd6be9515c948ec1e17f2ecb27b1837}\index{BME280@{BME280}!getChipID@{getChipID}}
+\index{getChipID@{getChipID}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getChipID()}{getChipID()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_a8bd6be9515c948ec1e17f2ecb27b1837} 
+uint8\+\_\+t BME280\+::get\+Chip\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+gets the chip ID 
+
+\begin{DoxyReturn}{Returns}
+the chip ID ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_a9b873efb610056bf51d3bf1317848859}\index{BME280@{BME280}!getHumidity@{getHumidity}}
+\index{getHumidity@{getHumidity}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getHumidity()}{getHumidity()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_a9b873efb610056bf51d3bf1317848859} 
+float BME280\+::get\+Humidity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+gets the measured pressure ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+pressure 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_a237f77b4d86de70244508956ac8daf60}\index{BME280@{BME280}!getPressure@{getPressure}}
+\index{getPressure@{getPressure}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getPressure()}{getPressure()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_a237f77b4d86de70244508956ac8daf60} 
+float BME280\+::get\+Pressure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+gets the measured pressure ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+pressure 
+\end{DoxyReturn}
+\Hypertarget{class_b_m_e280_a6138208603627bbfc3e5c07e07c96c6e}\index{BME280@{BME280}!getTemperature@{getTemperature}}
+\index{getTemperature@{getTemperature}!BME280@{BME280}}
+\doxysubsubsection{\texorpdfstring{getTemperature()}{getTemperature()}}
+{\footnotesize\ttfamily \label{class_b_m_e280_a6138208603627bbfc3e5c07e07c96c6e} 
+float BME280\+::get\+Temperature (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+gets the measured temperature ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+temperature 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Aimane/\+Desktop/\+HU/\+JAAR\+\_\+1\+\_\+\+TI-\/\+S2/personal-\/progress-\/\+Aimane0/\+Arduino/\+LIBRARY/\+BME280\+\_\+library\+\_\+\+CPP/\+BME280\+\_\+\+LIBRARY/lib/\+BME280\+HPPn\+CPP/BME280.\+hpp\item 
+C\+:/\+Users/\+Aimane/\+Desktop/\+HU/\+JAAR\+\_\+1\+\_\+\+TI-\/\+S2/personal-\/progress-\/\+Aimane0/\+Arduino/\+LIBRARY/\+BME280\+\_\+library\+\_\+\+CPP/\+BME280\+\_\+\+LIBRARY/lib/\+BME280\+HPPn\+CPP/BME280.\+cpp\end{DoxyCompactItemize}

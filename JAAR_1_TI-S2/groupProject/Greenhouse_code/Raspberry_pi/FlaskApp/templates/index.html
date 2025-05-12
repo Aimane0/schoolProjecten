@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TI S2 Parkrangers greenhouse</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log('Connected to server');
+            updateData(); // Start de functie om gegevens bij te werken zodra verbonden
+        });
+
+        socket.on('update_data', function(data) {
+            // Update de gegevens in de pagina met nieuwe MQTT-gegevens
+            document.getElementById('temperature').innerHTML = data.temperature.value + ' ' + data.temperature.unit;
+            document.getElementById('pressure').innerHTML = data.pressure.value + ' ' + data.pressure.unit;
+            document.getElementById('humidity').innerHTML = data.humidity.value + ' ' + data.humidity.unit;
+            document.getElementById('soil').innerHTML = data.soil.value + ' ' + data.soil.unit;
+        });
+
+        function updateData() {
+            // Update de tijd elke seconde
+            setInterval(function() {
+                var now = new Date();
+                document.getElementById('time').innerHTML = now.toLocaleString(); // Update de tijd
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <p>Live time: <span id="time"></span></p>
+    <p>The temperature inside the greenhouse is <span id="temperature"></span></p>
+    <p>The pressure inside the greenhouse is <span id="pressure"></span></p>
+    <p>The humidity inside the greenhouse is <span id="humidity"></span></p>
+    <p>The soil humidity inside the greenhouse is <span id="soil"></span></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Serieel = wanneer bits 1 voor 1 gestuurd worden
+
+parallel = bits worden gelijktijdig allemaal gestuurd
+
+one wire is seriele data communicatie!
+
+parallel is duurder en ingewikkelder, meer connectors en draden nodig!
+
+Parallel, meer data in 1x verstuurd, maar moet moet allemaal wel tegelijk aankomen
+De bits moeten tegelijk aankomen
+
+
+one wire heeft maar 2 draden nodig
+ene voor stroom, data en klok
+
+andere draad is de GND
+
+Je kunt meerdere one wires op 1 data lijn zetten en individueel aanspreken
+
+Wij gebruiken 3 draden, dat is stabieler
+
+Andere vorm van communicatie is half duplex
+half duplex betekent dat 1 apparaat op het moment kan praten
+niet allemaal tegelijk, want anders werkt het niet
+(Zoek voor de zekerheid ff extra info online wat half en full duplex is)
+
