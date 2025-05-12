@@ -1,0 +1,68 @@
+VCS = Version Control System
+
+Git en GitHub zijn niet het zelfde
+GitHub is de meest populaire service die Git host
+
+Alternatieven voor GitHub;
+GitLab
+Zelf hosten!
+
+Waarom GIT via de command line?
+In wat voor situatie je ook komt, wat je IDE ook is je kunt dan altijd de VCS gebruiken.
+
+
+------- Stel je begint een nieuw project:
+
+OPEN GIT BASH (Dit werkt alleen voor git bash, sommige commands werken niet op de windows command line/powershell)
+(Deze lines werken op command lines die linux achtige lines gebruiken)
+
+mkdir nieuw_project (maakt nieuwe folder)
+
+cd nieuw_project (gaat naar foldere)
+
+git init (start git)
+
+Open GitHub en maak een nieuwe repo aan! 
+
+Druk op de groene code knop om de SSH naar je REPO kunt kopieeren
+
+Terug naar command line
+git clone en plak de SSH link van je project
+
+Cloned het in je map die je hebt gemaakt
+
+ls om te checken welke bestanden er in zit zodat je kunt checken of de repo geconnect is dus bijvoorbeeld de gitignore en de readme.md
+
+---- NU DE REPO ER IS WAT KUNNEN WE DOEN?
+
+git status= checken of er verschillen zijn
+
+PUSHEN VAN BESTANDEN:
+Toevoegen aan de staging area, wachtruimte van bestanden die je wilt pushen
+Dit doe je met: git add [naam bestand]
+git add -a gebruik je om alles te willen pushen, maar dan weet je niet wat je allemaal pusht!
+
+Stel je wilt iets verwijderen uit de staging area
+git restore --[naam bestand]
+
+COMMITTEN!!!
+git commit -m "[naam van de commit]" -m"[Uitgebreidere uitleg]"
+:wq om uit VIM te komen als je in VIM komt! 
+
+NU ECHT PUSHEN!!!!!!!
+git push
+
+Nu is die echt gepushed :)
+
+
+----- FORK!
+Clone is een hard kopie, dan pas je de repo aan
+
+FORK is een soft kopie, dan push en pull je niet naar de repo van het project dat je wilt aanpassen, maar dan maak je je eigen lokale kopie van of repo
+
+
+----- BRANCHES!
+Parallele versies, aftakkingen van het project waar je veilig dingen kunt maken zonder dat de main branch in de war raakt
+
+
+
