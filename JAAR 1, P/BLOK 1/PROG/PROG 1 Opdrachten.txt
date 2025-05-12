@@ -1,0 +1,82 @@
+PROG1.4
+1:
+Ik neem aan dat de waardes voor A, B en C het zelfde zijn als in opdracht 1.3
+Om te checken of 6.75 groter is dan A en kleiner is dan B voer je het volgende uit, met de volgende antwoorden van Python:
+
+
+>>>6.75>a
+True
+>>>6.75<b
+True
+
+----------
+2:
+Voor de vorige opdracht moesten we verschillende variabelen onze namen toekennen.
+>>>voornaam=('Aimane')
+>>>tussenvoegsel=('')
+>>>achternaam=('Chakiri')
+>>>mijnnaam=voornaam+' '+tussenvoegsel+' '+achternaam
+>>>mijnnaam
+'Aimane  Chakiri'
+
+Om te checken of de lengte van mijnnaam even groot is als de som van de lengte van voornaam tussenvoegsel en achternaam typen we het volgende:
+
+>>>len(mijnnaam)
+15
+>>>len(voornaam+tussenvoegsel+achternaam)
+13
+
+De lengte is niet even lang, dit komt omdat mijnnaam nog 2 spaties in de som heeft zitten.
+
+------------
+3:
+Om er achter te komen of de lengte van mijnnaam 5maal groter is dan variabele c typen we het volgende uit
+>>>c*5
+32.5
+>>>len(mijnnaam)
+15
+
+De lengte van mijnnaam is significant korter dan variabel C
+Om dit nog dubbel te checken doen we het volgende:
+>>>15/5
+3.0
+
+Als die 5x groter was dan was het antwoord 32.5 geweest.
+
+-----------
+4:
+Hiervoor typen we het volgende uit:
+>>>tussenvoegsel in achternaam
+True
+
+Volgens mij geeft het True aan, omdat ik helemaal niks heb staan voor tussenvoegsel.
+Tussenvoegsel is in mijn geval '' 
+
+---------------------------------
+PROG 1.5
+1:
+De lijst is geschreven door dit uit te typen in Python:
+>>>favorieten=['Minor Threat']
+
+-----
+2: 
+De lijst breidt ik uit door 2x de favorieten.append() te gebruiken.
+>>>favorieten.append('Siouxsie and the Banshees')
+>>>favorieten.append('Parquet Courts')
+
+3:
+Ik vervang de tweede artiest door het volgende te doen.
+We zoeken via index de tweede in het lijstje.
+>>>favorieten[1]
+'Siouxsie and the Banshees'
+
+Vervolgens
+Vervolgens typen we:
+>>>favorieten[1]=('Joy Division')
+
+Dan checken we of het de juiste index was en of de juiste artiesten vervangen zijn.
+>>>favorieten
+['Minor Threat', 'Joy Division', 'Parquet Courts']
+
+gelukt!
+

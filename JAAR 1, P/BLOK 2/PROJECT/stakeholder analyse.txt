@@ -1,0 +1,33 @@
+Stakeholders: Alle belanghebbende die beinvloed worden of kunnen beinvloeden van een product/dienst
+
+Stakeholders van Steam:
+Gamers, Steam developers, Game developers, Publishers, Streamers YouTubers en andere mensen die social media gebruiken, Esport  atleten, handelaren, server waarop steam draait, steam deck assembly line, ideal paypall en andere betaal manieren etc, winkels die steam kaarten verkopen, steam medewerkers
+
+
+Stakeholders onze dashboard:
+Gamers, game bedrijven, steam medewerkers, steam market place handelaren,
+de server waarop het dashboard draait, wij zijn ook stakeholders, steam is een stakeholder want zij geven ons de opdracht en leveren hun apis,
+valve, wet en regelgeving zoals cookies vragen
+
+STAKEHOLDER COMPETITORS:
+EA GAMES, UBISOFT, EPIC GAMES MET HUN EIGEN PLATFORMS!!!!!!!!
+
+Intern:
+Steam medewerkers
+
+Extern:
+Wij 
+Gamers
+Game bedrijven
+Concurrenten zoals EA, Ubisoft, Epic met hun eigen platforms
+Server waarop het dashboard wordt gehost
+
+Primaire stakeholders:
+Steam medewerkers
+Wij
+Gamers
+Server host
+
+Secundaire stakeholders:
+Game bedrijven
+Concurrenten
