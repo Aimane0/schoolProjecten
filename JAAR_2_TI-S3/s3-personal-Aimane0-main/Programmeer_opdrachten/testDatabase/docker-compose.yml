@@ -1,0 +1,18 @@
+services:
+  mongo_testbase:
+    networks:
+      - mynetwork_testbase
+    image: mongo:4.4.18
+    container_name: mongo_testbase
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: flitsmaister
+      MONGO_INITDB_ROOT_PASSWORD: flitsmaister
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodata:/data/db
+
+networks:
+  mynetwork_testbase:
+    driver: bridge

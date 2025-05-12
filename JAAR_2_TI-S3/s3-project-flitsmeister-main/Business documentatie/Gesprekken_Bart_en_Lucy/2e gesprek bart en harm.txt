@@ -1,0 +1,43 @@
+## item 1 key drivers, requirements etc
+Planboard zag er goed uit! 
+
+### Key driver
+Extra keydriver/requirement: alle feedback mag alleen positief zijn
+
+Database misschien van naam veranderen, het woord handig moet weg want impliceert dat het niet perse hoeft
+
+Toevoeging van winst en of nieuwe markt aanboren
+
+Veilig; apparatuur moet op het plafond/aan de muren niet op de grond
+
+geen slechte eerste poging
+
+### Requirements
+Functioneren van componenten moet betrouwbaarheid van componenten zijn, maar is lastig te bewijzen. Betrouwbaarheid misschien beschrijven als de onderdelen die we wel en niet willen gebruiken
+
+Minimum snelheid weg halen, ook vanwege de negatieve feedback
+
+Makkelijk gebruik misschien beschrijven als iets zoals binnen x aantal minuten moet een niet technisch persoon het kunnen opzetten! 
+
+Flask is non functional
+
+haal de run time er uit dit is niet te bewijzen
+
+### Databasesysteem
+De 1 en 2 requirement weg halen
+
+### Non functional
+Bespreek het met Lucy!
+Sommige eisen niet nodig voor een prototype
+
+### Use case
+Use case diagram ziet er goed uit mooi uit!
+
+### Lucy
+Vragen wat ze verwacht
+
+### hoe gaat het met het team
+Sterke punten; veel feedback van elkaar vragen
+Waar hebben we plezier uit gehaald; we zijn naar de hideout gegaan
+risico; we kunnen te weinig plannen mogelijk
+wat missen we; is misschien nog te vroeg om te oordelen

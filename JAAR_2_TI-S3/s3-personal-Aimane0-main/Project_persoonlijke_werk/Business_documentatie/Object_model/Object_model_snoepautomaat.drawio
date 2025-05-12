@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0" version="24.7.14">
+  <diagram name="Page-1" id="5tTSehDB1i_3O0r_mSbf">
+    <mxGraphModel dx="2562" dy="838" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AdaMI_6RlJ01Z847kzou-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-2" target="AdaMI_6RlJ01Z847kzou-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-6" value="Knop pressed(start knop ID)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-5">
+          <mxGeometry x="0.0561" y="-2" relative="1" as="geometry">
+            <mxPoint x="26" y="-42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-2" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;StartKnop" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-4" target="AdaMI_6RlJ01Z847kzou-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-10" value="Toon bericht (bericht)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-9">
+          <mxGeometry x="0.2568" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-4" target="AdaMI_6RlJ01Z847kzou-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="109" y="193" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-21" value="Start" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-19">
+          <mxGeometry x="-0.257" y="-20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-37" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-4" target="AdaMI_6RlJ01Z847kzou-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-41" value="Start&lt;br&gt;(prijs)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-37">
+          <mxGeometry x="0.1753" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-46" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-4" target="AdaMI_6RlJ01Z847kzou-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-49" value="mag uitwerpen&lt;br&gt;(nummer)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-46">
+          <mxGeometry x="0.0049" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-4" value="&amp;lt;&amp;lt;control&amp;gt;&amp;gt;&lt;br&gt;SnoepVerkoopControl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-192" y="178" width="187" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-7" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;Display" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-578" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-11" target="AdaMI_6RlJ01Z847kzou-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-16" value="Toets ingedrukt (toets)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-15">
+          <mxGeometry x="0.0302" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-11" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;Keypad" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="471" y="396" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-14" value="&amp;lt;&amp;lt;control&amp;gt;&amp;gt;&lt;br&gt;Artikel nummer invoeren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236" y="284" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.964;entryY=0.956;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-14" target="AdaMI_6RlJ01Z847kzou-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-4" y="323" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-18" value="Nummer ingevoerd (nummer)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-17">
+          <mxGeometry x="-0.0622" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-22" target="AdaMI_6RlJ01Z847kzou-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-30" value="Kosten van artikel (prijs)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-25">
+          <mxGeometry x="-0.2596" relative="1" as="geometry">
+            <mxPoint x="1" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-22" value="&amp;lt;&amp;lt;entity&amp;gt;&amp;gt;&lt;br&gt;Artikelen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-189" y="521" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-28" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-24" target="AdaMI_6RlJ01Z847kzou-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-29" value="Kijken of het er is (nummer)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-28">
+          <mxGeometry x="0.049" y="1" relative="1" as="geometry">
+            <mxPoint x="-3" y="-33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-24" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;Artikel check" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-189" y="372" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.662;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-24" target="AdaMI_6RlJ01Z847kzou-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-31" value="Geeft aan of het er is (prijs)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-26">
+          <mxGeometry x="-0.6802" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-27" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-4" target="AdaMI_6RlJ01Z847kzou-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-32" value="Vraagt of artikel er is (nummer)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-27">
+          <mxGeometry x="-0.347" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-40" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-35" target="AdaMI_6RlJ01Z847kzou-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-44" value="Succesvol of niet&lt;br&gt;(true of false)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-40">
+          <mxGeometry x="0.035" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-35" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;Pinautomaat" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-578" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-38" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-36" target="AdaMI_6RlJ01Z847kzou-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-42" value="Geslaagd of niet&lt;br&gt;(true of false)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-38">
+          <mxGeometry x="-0.1832" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-39" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-36" target="AdaMI_6RlJ01Z847kzou-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-43" value="Start&lt;br&gt;(Prijs)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-39">
+          <mxGeometry x="-0.1733" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-36" value="&lt;div&gt;&amp;lt;&amp;lt;control&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;betaling&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-578" y="182" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-45" value="&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;&lt;br&gt;Uitwerp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-171" y="13" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-47" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.225;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="AdaMI_6RlJ01Z847kzou-45" target="AdaMI_6RlJ01Z847kzou-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdaMI_6RlJ01Z847kzou-48" value="Status uitwerp&lt;br&gt;(true of false)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="AdaMI_6RlJ01Z847kzou-47">
+          <mxGeometry x="0.0701" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
